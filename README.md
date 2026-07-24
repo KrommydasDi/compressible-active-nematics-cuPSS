@@ -86,3 +86,9 @@ The scripts in `utils/` generate movies from the simulation output after a run i
 ## License
 
 This repository is distributed under the MIT License. See `LICENSE` for the retained upstream copyright notices and license terms.
+
+## Citation
+
+This solver is built using cuPSS. When using this code, please cite:
+
+Fernando Caballero, “cuPSS: a package for pseudo-spectral integration of stochastic PDEs,” arXiv:2405.02410 [physics.comp-ph] (2024). https://doi.org/10.48550/arXiv.2405.02410
