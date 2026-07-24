@@ -1,0 +1,29 @@
+Nx = 256
+Ny = 256
+NSteps = 20000
+NSave = 100
+
+dx = 1.0
+dy = 1.0
+dt = 0.001
+
+D = 1.0
+
+r = 1.0
+u = 1.0
+K = 10.0
+
+lambda = 1.0
+
+alpha = -1.0
+alphaB = -1.0
+eta = 1.0
+friction = 0.01
+
+chi = 1.0
+seed = 1
+
+meanrho = 1.0
+rhoc = 1.0
+
+patternCode = 0
