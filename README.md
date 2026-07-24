@@ -13,9 +13,9 @@ CUDA-based simulations of compressible active nematics with uniform or spatially
 
 ## Upstream software
 
-This repository builds on the [cuPSS](https://github.com/fcaballerop/cuPSS) pseudospectral solver framework developed by Fernando Caballero.
+This repository builds on the [cuPSS](https://github.com/fcaballerop/cuPSS) pseudospectral solver framework developed by [Fernando Caballero](https://github.com/fcaballerop).
 
-The repository structure and workflow were also informed by [Paarth Gulati's cuPSS-based code](https://github.com/paarthgulati/activeFolding_cuPSS).
+The repository structure and workflow were also informed by [Paarth Gulati](https://github.com/paarthgulati) and his [cuPSS-based code](https://github.com/paarthgulati/activeFolding_cuPSS).
 
 The original copyright notices are retained in the `LICENSE` file.
 
