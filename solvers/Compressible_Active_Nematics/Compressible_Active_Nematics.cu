@@ -195,11 +195,12 @@ int main(int argc, char **argv)
     system.addEquation("dt rho + q^2 * D * rho = - iqxrhoVx - iqyrhoVy");
 
     // Conserved
-    // system.addEquation("dt Qxx = - r * Qxx * (1 - (1/rhoc) * rho) - K * q2Qxx -u * TrQ2 * Qxx * rho * (1/rhoc) - vx*iqxQxx - vy*iqyQxx + (lambda * (1/2)) * (iqxvx - iqyvy) - iqxvy * Qxy + iqyvx * Qxy");
-    // system.addEquation("dt Qxy = - r * Qxy * (1 - (1/rhoc) * rho) - K * q2Qxy -u * TrQ2 * Qxy * rho * (1/rhoc) - vx*iqxQxy - vy*iqyQxy + (lambda * (1/2)) * (iqxvy + iqyvx) + iqxvy * Qxx - iqyvx * Qxx");    
+    system.addEquation("dt Qxx = - r * Qxx * (1 - (1/rhoc) * rho) - K * q2Qxx -u * TrQ2 * Qxx * rho * (1/rhoc) - vx*iqxQxx - vy*iqyQxx + (lambda * (1/2)) * (iqxvx - iqyvy) - iqxvy * Qxy + iqyvx * Qxy");
+    system.addEquation("dt Qxy = - r * Qxy * (1 - (1/rhoc) * rho) - K * q2Qxy -u * TrQ2 * Qxy * rho * (1/rhoc) - vx*iqxQxy - vy*iqyQxy + (lambda * (1/2)) * (iqxvy + iqyvx) + iqxvy * Qxx - iqyvx * Qxx");    
 
-    system.addEquation("dt Qxx = - r * Qxx * (1 - (1/rhoc) * rho) - K * q2Qxx -u * TrQ2 * Qxx * rho * (1/rhoc) - vx*iqxQxx - vy*iqyQxx - Qxx*iqxvx - Qxx*iqyvy + (lambda * (1/2)) * (iqxvx - iqyvy) - iqxvy * Qxy + iqyvx * Qxy");
-    system.addEquation("dt Qxy = - r * Qxy * (1 - (1/rhoc) * rho) - K * q2Qxy -u * TrQ2 * Qxy * rho * (1/rhoc) - vx*iqxQxy - vy*iqyQxy - Qxy*iqxvx - Qxy*iqyvy + (lambda * (1/2)) * (iqxvy + iqyvx) + iqxvy * Qxx - iqyvx * Qxx");
+    // Non-conserved Old
+    // system.addEquation("dt Qxx = - r * Qxx * (1 - (1/rhoc) * rho) - K * q2Qxx -u * TrQ2 * Qxx * rho * (1/rhoc) - vx*iqxQxx - vy*iqyQxx - Qxx*iqxvx - Qxx*iqyvy + (lambda * (1/2)) * (iqxvx - iqyvy) - iqxvy * Qxy + iqyvx * Qxy");
+    // system.addEquation("dt Qxy = - r * Qxy * (1 - (1/rhoc) * rho) - K * q2Qxy -u * TrQ2 * Qxy * rho * (1/rhoc) - vx*iqxQxy - vy*iqyQxy - Qxy*iqxvx - Qxy*iqyvy + (lambda * (1/2)) * (iqxvy + iqyvx) + iqxvy * Qxx - iqyvx * Qxx");
 
     system.addEquation("TrQ2 = Qxx*Qxx + Qxy*Qxy");
     system.addEquation("pressure = chi*rho - alphaB * rho * (1/rhoc) * intensity");

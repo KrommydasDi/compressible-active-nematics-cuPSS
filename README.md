@@ -5,7 +5,7 @@ CUDA-based simulations of compressible active nematics with uniform or spatially
 ## Repository structure
 
 - `src/` and `inc/`: cuPSS source code and headers.
-- `solvers/compressibleFlow_final_final/`: compressible active-nematic solver and default parameters.
+- `solvers/Compressible_Active_Nematics/`: compressible active-nematic solver and default parameters.
 - `run/`: simulation run script.
 - `utils/`: Python scripts for generating movies from simulation output.
 - `cluster/`: example SLURM submission script.
@@ -36,13 +36,13 @@ The optional movie-generation scripts require Python 3 and the packages listed i
 From the repository root, compile the compressible active-nematic solver with:
 
 ```bash
-./comp.sh -s compressibleFlow_final_final
+./comp.sh -s Compressible_Active_Nematics
 ```
 
 The executable is written to:
 
 ```text
-bin/compressibleFlow_final_final
+bin/Compressible_Active_Nematics
 ```
 
 ## Running a simulation
@@ -50,13 +50,13 @@ bin/compressibleFlow_final_final
 Run the script from the repository root:
 
 ```bash
-./run/run_compressible_final_final.sh
+./run/run_Compressible_Active_Nematics.sh
 ```
 
 Simulation outputs are written under:
 
 ```text
-projects/activePatterning_final_final/
+projects/Compressible_Active_Nematics/
 ```
 
 The run script accepts command-line options for system size, activity, friction, density, diffusivity, elastic constant, timestep, saving interval, and other simulation parameters.
@@ -66,12 +66,12 @@ The run script accepts command-line options for system size, activity, friction,
 Compile the solver first, then submit the example job script from the repository root:
 
 ```bash
-sbatch cluster/actPat_p.sbatch
+sbatch cluster/Compressible_Active_Nematics.sbatch
 ```
 
 The example script requests one GPU and writes standard output and error files to `logs/`.
 
-The CUDA and Anaconda module names in `cluster/actPat_p.sbatch` are cluster-specific and may need to be changed for another computing environment.
+The CUDA and Anaconda module names in `cluster/Compressible_Active_Nematics.sbatch` are cluster-specific and may need to be changed for another computing environment.
 
 ## Python utilities
 

@@ -1,21 +1,23 @@
 #!/bin/bash
-projectName="activePatterning_final_final"
-solver_name="compressibleFlow_final_final"
+projectName="Compressible_Active_Nematics"
+solver_name="Compressible_Active_Nematics"
 
 rootDir=$(pwd)
 log_message="Solver used: ${solver_name}"
 
 Nx=512
 Ny=512
-NSteps=400000
-NSave=10000
-dt=0.0005
+
+NSteps=500000
+NSave=5000
+dt=0.001
 seed=1
 
-friction=0.0
+friction=0.0001
 
-alpha=-2.5
-alphaB=-1.5
+alpha=-1.0
+alphaB=-0.7
+
 r=0.2
 K=0.2
 chi=0.7
@@ -27,7 +29,7 @@ meanrho=0.7
 dx=1.0
 dy=1.0
 
-patternCode=0
+patternCode=11
 
 eta=1.0
 
@@ -109,7 +111,7 @@ else
  mkdir $PROJECTDIR/$DIRTREE
 fi
 
-cp solvers/${solver_name}/default_parameters.txt $PROJECTDIR/$DIRTREE/sim_parameters.txt
+cp solvers/${solver_name}/default_parameters.txt $PROJECTDIR/$DIRTREE/sim_parameters.txt 
 mkdir $PROJECTDIR/$DIRTREE/data
 
 cd $PROJECTDIR/$DIRTREE

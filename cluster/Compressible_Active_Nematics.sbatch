@@ -29,7 +29,7 @@ echo "Start : $(date)"
 echo "CWD   : $(pwd)"
 echo "========================================"
 
-./run/run_compressible_final_final.sh
+./run/run_Compressible_Active_Nematics.sh
 
 echo "========================================"
 echo "End   : $(date)"
